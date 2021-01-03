@@ -1,0 +1,473 @@
+body {
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;/*Centering the page*/
+    /* background-color:#464646;*/
+}
+
+/*Navigation bar*/
+.navigation {
+    position:fixed; /*Navigation stays up even scrolling the page down*/
+    z-index: 10001;
+    width: 100%;
+    top: 0;
+    background-color: coral;
+
+}
+.navigation ul {
+    list-style-type:none; /*Deleting default bulleting*/
+    margin:0; /*Deleting default margin*/
+    padding:0;
+    overflow: hidden;
+}
+.navigation li {
+    float:right; /*Floatin items from left to right*/
+}
+.navigation li.name {
+    float: left;
+    display: block; /*Give link dimensions ("box") with width and height*/
+    font-family: "Source Sans Pro Light";
+    width: 170px;
+    color:white;
+    text-decoration:none; /*Deleting default styles*/
+    padding: 20px;
+    text-transform:uppercase;
+}
+.navigation li a {
+    display: inline-block; /*Give link dimensions ("box") with width and height*/
+    font-family: "Source Sans Pro Light";
+    color:white;
+    text-decoration:none; /*Deleting default styles*/
+    padding: 20px;
+    text-transform:uppercase;
+}
+.navigation li a:hover{
+    background-color: darkturquoise;
+}
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: coral;
+    text-align: right;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+/*Common*/
+h2 {
+    font-size: 24px;
+    font-family: "Source Sans Pro Light";
+}
+h3 {
+    font-size: 20px;
+    font-family: "Source Sans Pro Light";
+}
+
+#footer {
+    width:100%;
+    height:150px;
+    color:white;
+    background-color: darkcyan;
+    text-align:center;
+    padding-top:50px;
+    font-family: "Source Sans Pro Light";
+    z-index: 99000;
+}
+
+/*Etusivu*/
+
+.header {
+    width:100%;
+    height: 450px;
+    background-image:url("https://cdn.pixabay.com/photo/2019/08/27/06/47/internet-4433515_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.9;
+}
+.space0 {
+    width:60%;
+    margin: 0;
+    display: flex;
+    position: relative;
+    float: right;
+    height: 100%;
+}
+.header h1{
+    font-family: "Monotype Corsiva";
+    font-size:50px;
+    color:white;
+    margin: 180px 0px;
+    padding:0px 30px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 830px;
+    background-image: url("images/tausta3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0;
+    display: flex;
+    top: 400px;
+    z-index: 99;
+    opacity: 0.9;
+}
+
+.outside0 {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    background-color: white;
+    margin: 5% 5%;
+    padding: 2% 5% 5% 5%;
+    position: absolute;
+}
+
+.box h1 {
+    font-size: 34px;
+    font-family: "Source Sans Pro Light";
+    margin-bottom: 4%;
+}
+.box p {
+    font-size: 19px;
+    font-family: "Source Sans Pro Light";
+    line-height: 1.8;
+}
+
+.box ul li a {
+    font-size: 19px;
+    font-family: "Source Sans Pro Light";
+    line-height: 1.8;
+    color: darkcyan;
+}
+
+
+/*Kuvagalleria*/
+.wrapper1 {
+    width: 100%;
+    height: 2000px;
+    background-image: url("images/tausta3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.outside {
+    width: 100%;
+    height: 500px;
+    margin: 20px 0 10px 0;
+    z-index: 99;
+}
+
+.column {
+    width:86%;
+    height: 100%;
+    text-align: left;
+    margin: 2%;
+    left:5%;
+    position: absolute;
+}
+.column h1 {
+    font-size: 32px;
+    font-family: "Source Sans Pro Light";
+    padding:110px 30px 30px 30px;
+    margin: 0;
+    z-index: 100;
+    position: relative;
+}
+
+.column p {
+    font-size: 19px;
+    font-family: "Source Sans Pro Light";
+    color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    padding: 110px 30px 30px 30px;
+    position: absolute;
+    top: 60px;
+    line-height: 1.8;
+    height: content-box;
+    background-color: white;
+}
+
+#boxing {
+    width:100%;
+    height:1300px;
+    padding: 70px 0px 60px 0px;
+
+   /* margin: auto;*/
+}
+
+.container {
+    position: relative;
+    width: 20%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 8px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+   /* transition: .5s ease;*/
+    opacity:0;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    text-align: left;
+    opacity: 1;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: "Source Sans Pro Light";
+}
+
+/*Video*/
+.wrapper3 {
+    width: 100%;
+    height: 1600px;
+    background-image: url("images/tausta3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+.outsidev {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.boxv {
+    background-color: white;
+    width: 80%;
+    margin: 5% 5%;
+    padding: 2% 5% 5% 5%;
+    position: absolute;
+    height: 1350px;
+}
+
+.boxv h1 {
+    font-size: 34px;
+    font-family: "Source Sans Pro Light";
+    margin-bottom: 4%;
+}
+
+.boxv p {
+    font-size: 19px;
+    font-family: "Source Sans Pro Light";
+    line-height: 1.8;
+}
+
+.intro {
+ width: 30%;
+ position: relative;
+ box-sizing: border-box;
+ display: inline-table;
+ margin: 700px 5% 0 0;
+
+}
+
+.intro img {
+ width: 100%;
+ box-sizing: border-box;
+ display: inline-table;
+ position: absolute;
+ left: 33%;
+}
+
+.intro h3 {
+margin-left: 33%;
+}
+
+/*Kuvaformaatit*/
+
+.wrapper2 {
+    width: 100%;
+    height: 3200px;
+    background-image: url("images/tausta3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+.box img {
+    width: 50%;
+}
+
+/*MINI*/
+#boxxx {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: lightgrey;
+}
+
+#blue {
+    background-color: blue;
+    display:block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 8%;
+    left: 0;
+}
+
+#red {
+    background-color: red;
+    display:block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#yellow {
+    background-color: yellow;
+    display:block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    /* top: calc(50% - 50px);
+     left: calc(50% - 50px);*/
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+#green {
+    background-color: green;
+    display:block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 8%;
+    right: 0;
+}
+
+#black {
+    background-color: black;
+    display:block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+/*Responsiivinen*/
+@media (max-width:768px)
+{
+    .toggle {
+        display: block;
+    }
+    .toggle p {
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block;;
+        float: left;
+        margin: 0;
+        padding: 7px;
+        justify-content: center;
+        text-align: center;
+        text-transform:uppercase;
+        font-family: "Source Sans Pro Light";
+    }
+    .navigation li {
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+    .navigation li.name  {
+        display: none;
+    }
+    .responsive li {
+        display: block;
+    }
+    .space {
+        width: 100%;
+        position: relative;
+        left: 0;
+        margin: 0;
+    }
+
+    .space p {
+        font-size: 18px;
+        padding: 30px 30px;
+    }
+
+    .column {
+        width: 100%;
+        position: relative;
+        left: 0;
+        margin: 0;
+    }
+
+    .column p {
+        font-size: 18px;
+        padding: 90px 30px;
+    }
+
+    #boxing {
+        width:100%;
+        height:600px;
+        padding: 180px 0px 60px 0px;
+        /* margin: auto;*/
+    }
+    .overlay {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .wrapper1 {
+        height: 1400px;
+    }
+
+    .wrapper2 {
+         height: 2200px;
+     }
+
+    .wrapper3 {
+        height: 1800px;
+        background-color: white;
+        background-image: none;
+    }
+
+    .outsidev {
+        background-color: white;
+        height: 350px;
+    }
+
+    .boxv {
+        position: relative;
+    }
+
+    .intro {
+        width: 70%;
+        display: block;
+        margin-top: 42%;
+    }
+
+    .intro img {
+        left: 15%;
+    }
+
+    .intro h1 {
+        left: 15%;
+    }
+}
