@@ -7,13 +7,13 @@ The website includes a lightbox gallery and it has a responsive navigation bar.
 Screenshots below illustrate views of the website.
 
 ### Main Page
-![Screenshot](images/main-page.jpg)
+![Screenshot](images/main-page.JPG)
 
 ### Image Gallery
-![Screenshot](images/image-gallery.jpg)
+![Screenshot](images/image-gallery.JPG)
 
 ### Lightbox Gallery
-![Screenshot](images/lightbox.jpg)
+![Screenshot](images/lightbox.JPG)
 
 ### Responsive Navigation Bar
-![Screenshot](images/res-nav-bar.jpg)
+![Screenshot](images/res-nav-bar.JPG)
